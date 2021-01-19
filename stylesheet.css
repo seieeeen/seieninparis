@@ -1,0 +1,305 @@
+*{
+  margin:0;
+  padding:0;
+  }
+body{
+  font-family: 'Crimson Text';
+color: white;
+}
+span{
+  color:#F62CAB ;
+}
+
+
+
+/* header css */
+
+
+header{
+  background-image: url(file:///C:/Users/Seien/Desktop/Code/seieninparis/image/background%20heqder.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #504949;
+  height: 650px;
+  width: 100%;
+  margin: 0; 
+  color: white;
+}
+.top_wrapper{
+display: flex;
+flex-direction: row;
+align-items: center;
+
+}
+
+.logo_seien{
+  font-size: 55px;
+  font-weight: lighter;
+  margin-left: 20px;
+}
+
+/* menubar */
+
+nav {
+  margin-left:auto;
+  font-size: 30px ;
+}
+.menu_bar ul{
+  display: flex;
+  flex-direction: row;
+}
+.menu_bar li{
+  padding-right:15px ;
+  list-style:none;
+}
+.borderMarker {
+  position: relative;
+}
+
+.borderMarker span {
+    z-index: 1;
+    position: relative;
+}
+
+.borderMarker::after {
+  content: "";
+  position: absolute;
+  left: -0.1px;
+  right: -0.1px;
+  bottom: 0;
+  height: 100%;
+  transform: scaleY(.08);
+  transition: transform .1s ease-in-out;
+  transform-origin: bottom;
+  background-color: rgba(87, 74, 80, 0.53);
+}
+
+.borderMarker:hover::after {
+  transform: scaleY(1);
+}
+
+.menu_bar a{
+  color: white;
+  text-decoration: none;}
+
+
+.phrase_container{
+  background-color: rgba(87, 74, 80, 0.73);
+  width: 70%;
+  height: 350px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  
+}
+.phrase_container h1{
+font-size: 72px;
+font-weight: lighter;
+}
+
+section{  width: 100%;
+  height: 620px;}
+
+/* introduce sec css */
+
+.brown_backcontainer{
+
+  background-color: #504949;
+}
+section h1{
+  font-size:60px ;
+  font-weight: lighter;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.exp_wrapper{
+  display: flex;
+  flex-direction: row;
+
+}
+
+
+.trim-image-to-circle{
+  background-image: url("file:///C:/Users/Seien/Desktop/Code/seieninparis/image/carre.jpg"); 
+  width:  300px;      
+   height: 300px;      
+  border-radius: 50%;  
+  display: block;          
+background-position: center;
+background-size: cover;
+margin-left: auto;
+margin-right: 30px;
+
+}
+
+.information_container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+
+}
+.introduce_text{
+  font-size: 27px;
+  padding-top: 50px;
+}
+.personal_info{
+  margin-top: 40px;
+  margin-bottom:20px ;
+}
+.personal_info ul{
+  list-style:none;
+  font-size: 22px;
+}
+.personal_info i{
+  text-align: left;
+}
+.personal_info i{
+  padding-right:15px ;
+  color: #F62CAB;
+}
+
+
+/* Works section */
+
+
+
+
+
+
+
+
+/* Skills sections */
+.berry_background{
+  background-color:#A87596;
+background-size: cover;}
+
+
+
+/* percentage bar */
+.percentage_bar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 50px 50px;
+}
+
+.circle-wrap {
+  margin: 50px auto;
+  width: 250px;
+  height: 250px;
+  background: #e6e2e7;
+  border-radius: 50%;
+
+}
+.circle-wrap .circle .mask,
+.circle-wrap .circle .fill {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  border-radius: 50%;
+}
+.circle-wrap .circle .mask {
+  clip: rect(0px,250px, 250px, 125px);
+}
+.circle-wrap .circle .mask .fill {
+  clip: rect(0px, 125px, 250px, 0px);
+  background-color:#574A50;}
+
+.circle-wrap .circle .mask.full,
+.circle-wrap .circle .fill {
+  animation: fill ease-in-out 2s;
+  transform: rotate(149deg);
+}
+ 
+@keyframes fill {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(149deg);
+  }
+}
+.circle-wrap .inside-circle {
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  background: #fff;
+  line-height: 130px;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 10px;
+  position: absolute;
+  z-index: 100;
+  font-weight: 700;
+  font-size: 2.2em;
+  color: #A87596;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.inside-circle h1{
+  font-size: 33px;
+  font-weight: bold;
+}
+
+/* 70% cercle */
+
+.circle-wrap .circle .filltwo {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle-wrap .circle .mask .filltwo {
+  clip: rect(0px, 125px, 250px, 0px);
+  background-color:#574A50;}
+
+
+.circle-wrap .circle .mask.fulltwo,
+.circle-wrap .circle .filltwo {
+  animation: fill ease-in-out 2s;
+  transform: rotate(126deg);
+}
+ 
+@keyframes filltwo {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(126deg);
+  }
+}
+
+
+.inside-circle p{font-size: 20px;}
+.inside-circle li{
+  list-style: none;
+}
+
+
+
+/* Section youtube */
+
+
+
+/* Section contact */
+
+.cream_background{
+  background-color:#FEF9E5 ;
+}
+.cream_background h1{
+  color: #574A50;
+}

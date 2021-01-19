@@ -1,0 +1,19 @@
+@media (max-width: 1000px){
+header{
+  width: 100%;
+}
+.phrase_container h1{
+  font-size: 50px;
+  font-weight: lighter;
+  }
+  nav {
+    font-size: 25px ;
+  }
+  
+.logo_seien{
+  font-size: 35px;
+  font-weight: lighter;
+}
+
+
+}
